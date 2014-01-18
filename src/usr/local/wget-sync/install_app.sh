@@ -15,8 +15,9 @@ if [ $? != 0 ]; then
 	cat $payload >> $target
 fi
 
-target=$wget_sync_settings/config.sh
-payload=$wget_sync_home/config_template.txt
+target=$wget_sync_settings/script.sh
+payload=$wget_sync_home/script_template.txt
 if [ ! -f $target ]; then
 	cat $payload > $target
 fi
+chmod a+x $target

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+##################
+# Set the wget command that is run when kobo has internet connection
+##################
+
+# This is example:
+# wget -m -nd --no-parent --no-check-certificate https://www.googledrive.com/host/FOLDER_ID/
