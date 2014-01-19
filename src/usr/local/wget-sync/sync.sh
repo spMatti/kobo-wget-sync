@@ -23,14 +23,6 @@ echo "$0: connected"
 $wget_sync_home/virtual_sd.sh
 
 cd $wget_sync_libfolder
-# check if we should reset authentication code
-if [ -e $wget_sync_settings/config.sh ]; then
-    echo "$0: Loading config.sh.";
-    source $wget_sync_settings/config.sh
-else
-    echo "Did not find $wget_sync_settings/config.sh. Exiting"
-    exit 1
-fi
 
 #synchronize
 echo "$0: Starting Sync";
