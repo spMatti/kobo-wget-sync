@@ -5,4 +5,4 @@
 ##################
 
 # This is example:
-# wget -m -nd --no-parent --no-check-certificate https://www.googledrive.com/host/FOLDER_ID/
+# wget -r -l 5 -nd -nc --no-parent --reject "index.html*" --no-check-certificate -e robots=off https://www.googledrive.com/host/FOLDER_ID/
